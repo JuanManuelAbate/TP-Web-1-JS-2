@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Le Jeux - Version 2</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="icon" type="img/ico" href="favicon.ico">
+	</head>
+	<body>
+		<div class="container">
+		<div id="cont-juego" class="col-xs-12 col-sm-10 col-sm-offset-1 row">
+			<div class="col-xs-12">
+				<h1 id="titulo-juego" class="text-center">Le Jeux</h1>
+			</div>
+			<div class="col-sm-6">
+				<!-- contenedor de ruleta -->
+				<div id="cont-ruleta" class="col-xs-12">
+					<div id="ruleta">
+						<img id="img-ruleta" class="img-responsive" src="img/ruleta.png" alt="">
+					</div>
+				</div>
+				<!-- contenedor de resultados -->
+				<div id="display" class="col-xs-12">
+					<p>Salió el: <span id="r-ruleta"></span></p>
+					<p class="text-center">--------</p>
+					<p>Recompensa: <span id="r-recompensa"></span></p>
+					<p>Créditos: <span id="p-creditos">100</span></p>
+				</div>
+			</div>
+			<!-- botonera -->
+			<div id="tablero-apuesta" class="col-xs-12 col-sm-6">
+				<div class="col-xs-12">
+					<h3 id="tit-apostar" class="text-center">¡Apostar!</h3>
+				</div>
+				<div class="col-xs-12">
+					<div id="1" class="col-xs-3 btn-apuesta pleno">1 <span class="monto-ap badge">0</span></div>
+					<div id="2" class="col-xs-3 btn-apuesta pleno">2 <span class="monto-ap badge">0</span></div>
+					<div id="3" class="col-xs-3 btn-apuesta pleno">3 <span class="monto-ap badge">0</span></div>
+					<div id="4" class="col-xs-3 btn-apuesta pleno">4 <span class="monto-ap badge">0</span></div>
+				</div>
+				<div class="col-xs-12">
+					<div id="5" class="col-xs-3 btn-apuesta pleno">5 <span class="monto-ap badge">0</span></div>
+					<div id="6" class="col-xs-3 btn-apuesta pleno">6 <span class="monto-ap badge">0</span></div>
+					<div id="7" class="col-xs-3 btn-apuesta pleno">7 <span class="monto-ap badge">0</span></div>
+					<div id="8" class="col-xs-3 btn-apuesta pleno">8 <span class="monto-ap badge">0</span></div>
+				</div>
+				<div class="col-xs-12">
+					<div id="9" class="col-xs-3 btn-apuesta pleno">9 <span class="monto-ap badge">0</span></div>
+					<div id="10" class="col-xs-3 btn-apuesta pleno">10 <span class="monto-ap badge">0</span></div>
+					<div id="0" class="col-xs-6 btn-apuesta pleno">0 <span class="monto-ap badge">0</span></div>
+				</div>
+				<div class="col-xs-12">
+					<div id="negro" class="col-xs-4 btn-apuesta negro">Negro <span class="monto-ap badge">0</span></div>
+					<div id="rojo" class="col-xs-4 btn-apuesta rojo">Rojo <span class="monto-ap badge">0</span></div>
+					<div id="mayor" class="col-xs-4 btn-apuesta">Mayor <span class="monto-ap badge">0</span></div>
+				</div>
+				<div class="col-xs-12">
+					<div id="menor" class="col-xs-4 btn-apuesta">Menor <span class="monto-ap badge">0</span></div>
+					<div id="par" class="col-xs-4 btn-apuesta">Par <span class="monto-ap badge">0</span></div>
+					<div id="impar" class="col-xs-4 btn-apuesta">Impar <span class="monto-ap badge">0</span></div>
+				</div>
+				<div class="col-xs-12">
+					<div id="apostar" class="btn-apuesta">Apostar</div>
+					<div id="revancha" class="btn-apuesta">Revancha por 10!</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/juego-ruleta2.js"></script>
+	</body>
+</html>
